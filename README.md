@@ -1,26 +1,59 @@
-# Hi, I'm Sajid Manzoor 👋
+# Sajid Manzoor
 
-### Backend Developer
+**Backend Developer | Java · Apache Kafka · Kafka Connect · Spring Boot**
 
-I enjoy building backend applications and working with data-driven systems. I'm interested in writing reliable, maintainable software and continuously improving my engineering skills.
+I build backend systems with an emphasis on reliable integrations, event-driven architecture, and operational resilience.
 
-### Tech Stack
+[![GitHub](https://img.shields.io/badge/GitHub-sajuu730-181717?logo=github)](https://github.com/sajuu730)
 
-- **Languages:** Java, Python, SQL
-- **Messaging & Streaming:** Apache Kafka, Kafka Connect
-- **Cloud & DevOps:** AWS, Docker, Kubernetes, CI/CD
-- **Areas of Interest:** Backend Development, Distributed Systems, APIs
+## Featured engineering projects
 
-### What I'm Working On
+### 1. Kafka Connect Toolkit
+[![CI](https://github.com/sajuu730/kafka-connect-toolkit/actions/workflows/ci.yml/badge.svg)](https://github.com/sajuu730/kafka-connect-toolkit/actions/workflows/ci.yml)
 
-- Building and improving backend services
-- Exploring scalable systems and event-driven architectures
-- Learning and applying cloud-native development practices
+A Java 17 multi-module project with a custom REST source connector and JDBC sink connector.
+- Incremental source offsets and stable-ID checkpointing
+- HTTP pagination, bounded retries and rate-limit handling
+- JDBC batching, transactions, upsert and malformed-record DLQ reporting
+- Docker Compose integration environment with Kafka, Schema Registry, MySQL, Prometheus and Grafana
 
-### Connect
+**Stack:** Java 17, Kafka Connect 3.8.1, Maven, Testcontainers, Docker, MySQL, Prometheus, Grafana.
 
-- **GitHub:** [@sajuu730](https://github.com/sajuu730)
+[Repository](https://github.com/sajuu730/kafka-connect-toolkit) · [Architecture](https://github.com/sajuu730/kafka-connect-toolkit/blob/main/docs/architecture.md) · [Operations guide](https://github.com/sajuu730/kafka-connect-toolkit/blob/main/docs/operations.md)
+
+### 2. Kafka Connect Ops Guardian
+[![CI](https://github.com/sajuu730/kafka-connect-ops-guardian/actions/workflows/ci.yml/badge.svg)](https://github.com/sajuu730/kafka-connect-ops-guardian/actions/workflows/ci.yml)
+
+A Spring Boot service for monitoring Kafka Connect distributed clusters and coordinating guarded task recovery.
+- Polls connector and task status through the Connect REST API
+- Detects failed tasks and classifies common failure signatures
+- Optional task restart guarded by rolling-window limits and cooldown
+- Prometheus metrics and structured incident webhook delivery
+- Docker and Kubernetes deployment examples
+
+**Stack:** Java 21, Spring Boot, Kafka Connect REST API, Micrometer, Prometheus, Docker, Kubernetes.
+
+[Repository](https://github.com/sajuu730/kafka-connect-ops-guardian) · [Architecture](https://github.com/sajuu730/kafka-connect-ops-guardian/blob/main/docs/architecture.md) · [Configuration](https://github.com/sajuu730/kafka-connect-ops-guardian/blob/main/docs/configuration.md)
+
+## Technical skills
+
+| Area | Technologies |
+|---|---|
+| Languages | Java, Python, SQL |
+| Streaming | Apache Kafka, Kafka Connect, Avro, Schema Registry |
+| Backend | Spring Boot, REST APIs, JDBC |
+| Reliability | Retries, backoff, idempotent writes, DLQ, health monitoring |
+| DevOps | Docker, Docker Compose, Kubernetes, GitHub Actions |
+| Observability | Prometheus, Grafana, Micrometer, JMX |
+
+## Engineering interests
+
+Distributed systems · Event-driven architecture · Resilient integrations · Backend reliability · Cloud-native services
+
+## Connect
+
+- GitHub: [@sajuu730](https://github.com/sajuu730)
 
 ---
 
-*Thanks for visiting my profile!*
+*The repositories document implemented behavior, automated test coverage, and known limitations. CI badges reflect the latest workflow status; they are not production-readiness certifications.*
